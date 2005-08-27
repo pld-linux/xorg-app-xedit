@@ -1,5 +1,3 @@
-# $Rev: 3381 $, $Date: 2005-08-27 17:42:47 $
-#
 Summary:	xedit application
 Summary(pl):	Aplikacja xedit
 Name:		xorg-app-xedit
@@ -16,9 +14,7 @@ BuildRequires:	xorg-lib-libXaw-devel
 BuildRequires:	xorg-lib-libXprintUtil-devel
 BuildRequires:	xorg-util-util-macros
 BuildRequires:	pkgconfig >= 0.19
-BuildRoot:	%{tmpdir}/xedit-%{version}-root-%(id -u -n)
-
-%define		_prefix		/usr/X11R6
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 xedit application.
@@ -26,10 +22,8 @@ xedit application.
 %description -l pl
 Aplikacja xedit.
 
-
 %prep
 %setup -q -n xedit-%{version}
-
 
 %build
 %{__aclocal}
@@ -40,17 +34,14 @@ Aplikacja xedit.
 
 %{__make}
 
-
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-
 %clean
 rm -rf $RPM_BUILD_ROOT
-
 
 %files
 %defattr(644,root,root,755)
