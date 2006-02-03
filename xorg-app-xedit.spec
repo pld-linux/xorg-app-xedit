@@ -7,6 +7,8 @@ License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/app/xedit-%{version}.tar.bz2
 # Source0-md5:	526dbeb53e19e71003039b276024d0a2
+Source1:	xedit.desktop
+Source2:	xedit.png
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -43,6 +45,9 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+install -D %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/xedit.desktop
+install -D %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/xedit.png
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -52,4 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/X11/app-defaults/*
 %{_libdir}/X11/xedit
+%{_desktopdir}/xedit.desktop
+%{_pixmapsdir}/xedit.png
 %{_mandir}/man1/*.1x*
