@@ -1,5 +1,5 @@
 Summary:	xedit application
-Summary(pl.UTF-8):   Aplikacja xedit
+Summary(pl.UTF-8):	Aplikacja xedit
 Name:		xorg-app-xedit
 Version:	1.0.2
 Release:	1
