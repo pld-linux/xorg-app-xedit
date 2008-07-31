@@ -1,12 +1,12 @@
 Summary:	xedit application
 Summary(pl.UTF-8):	Aplikacja xedit
 Name:		xorg-app-xedit
-Version:	1.0.2
-Release:	2
+Version:	1.1.1
+Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/xedit-%{version}.tar.bz2
-# Source0-md5:	c56160e93c24ddf17e69891ed50deb72
+# Source0-md5:	37ff67afb10c2846d3709f5e8a7b661d
 Source1:	xedit.desktop
 Source2:	xedit.png
 URL:		http://xorg.freedesktop.org/
