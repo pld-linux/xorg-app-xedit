@@ -1,5 +1,5 @@
-Summary:	xedit application
-Summary(pl.UTF-8):	Aplikacja xedit
+Summary:	xedit application - simple text editor for X
+Summary(pl.UTF-8):	Aplikacja xedit - prosty edytor tekstu dla X
 Name:		xorg-app-xedit
 Version:	1.1.1
 Release:	1
@@ -22,10 +22,10 @@ Requires:	xorg-lib-libXt >= 1.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-xedit application.
+xedit application is a simple text editor for X.
 
 %description -l pl.UTF-8
-Aplikacja xedit.
+Aplikacja xedit to prosty edytor tekstu dla X.
 
 %prep
 %setup -q -n xedit-%{version}
@@ -53,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog
+%doc AUTHORS COPYING ChangeLog README
 %attr(755,root,root) %{_bindir}/xedit
 %{_datadir}/X11/app-defaults/Xedit*
 %{_libdir}/X11/xedit
