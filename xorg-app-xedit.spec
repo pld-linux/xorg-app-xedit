@@ -1,12 +1,12 @@
 Summary:	xedit application - simple text editor for X
 Summary(pl.UTF-8):	Aplikacja xedit - prosty edytor tekstu dla X
 Name:		xorg-app-xedit
-Version:	1.1.1
+Version:	1.1.2
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/xedit-%{version}.tar.bz2
-# Source0-md5:	37ff67afb10c2846d3709f5e8a7b661d
+# Source0-md5:	67193be728414d45a1922911e6437991
 Source1:	xedit.desktop
 Source2:	xedit.png
 URL:		http://xorg.freedesktop.org/
